@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+
+ :root {
+   --default-bg-color: #f5f5f5;
+   --primary-bg-color: #474242a3;
+   --secondary-bg-color: #F64E4E;
+   --tertiary-bg-color: #DC5F00;
+
+   --primary-text-color: #f5f5f5;
+
+   --primary-font: 'Oswald', sans-serif;
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Oswald', sans-serif;
+ }
+.container {
+  background-image: url('../images/CTV_4780.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-start;
+  font-size: 2rem;
+  width: 30%;
+}
+.navbar {
+  height: 100vh;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-bg-color);
+  gap: 1.5rem;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.navbar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--default-bg-color);
+  transition: 0.3s;
+  font-family: 'Lato', sans-serif;
+}
+.navbar a:hover {
+  color: var(--tertiary-bg-color);
+}
+.navbar > span {
+  gap: 1rem;
+}
+.navbar .closebtn {
+  position: relative;
+  top: 0;
+  left: 25px;
+  margin-left: 25px;
+}
+.btnlogout {
+  align-self: center;
+  height: 50px;
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-bg-color);
+  color: var(--default-bg-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.openbutton {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+.btnopen {
+  height: 10%;
+  width: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btnopen:hover {
+  color: var(--tertiary-bg-color);
+}
